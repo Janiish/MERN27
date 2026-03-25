@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage_clone</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 16px 10px 60px;
+            background-color: #efefef;
+            font-family: "Times New Roman", serif;
+            color: #000;
+        }
+
+        h2 {
+            margin: 22px 0 20px;
+            font-size: 40px;
+            font-weight: 500;
+        }
+
+        .media {
+            margin: 0 0 22px 10px;
+            width: 80px;
+            height: auto;
+        }
+
+        video {
+            width: 300px;
+            height: auto;
+            display: block;
+            margin: 0 0 22px;
+            background: #000;
+        }
+
+        .form-row {
+            font-size: 42px;
+            margin: 6px 0;
+        }
+
+        input {
+            width: 210px;
+            font-size: 40px;
+            font-family: "Times New Roman", serif;
+        }
+
+        button {
+            margin-top: 8px;
+            font-size: 40px;
+            font-family: "Times New Roman", serif;
+        }
+
+        .entity-line {
+            font-size: 42px;
+            margin: 28px 0;
+        }
+    </style>
+</head>
+<body>
+    <h2>ADDED IMAGE VIA LOCAL STORAGE</h2>
+    <img src="./apple.png" alt="Apple" class="media" onerror="this.onerror=null;this.src='https://cdn-icons-png.flaticon.com/512/415/415682.png';">
+
+    <h2>ADDED IMAGE VIA CDN</h2>
+    <img src="https://cdn-icons-png.flaticon.com/512/415/415682.png" alt="Apple from CDN" class="media">
+
+    <h2>ADDED VIDEO VIA CDN</h2>
+    <video controls>
+        <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>CREATE A BASIC FORM</h2>
+    <form>
+        <div class="form-row">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+        </div>
+
+        <div class="form-row">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>HTML ENTRIES</h2>
+    <p class="entity-line">- copyright: &copy;</p>
+    <p class="entity-line">- trademark: &amp;</p>
+    <p class="entity-line">- ampersand: &cent;</p>
+</body>
+</html>
