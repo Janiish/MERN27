@@ -127,6 +127,8 @@
             color: #fff;
             background: rgba(255, 255, 255, 0.12);
             transition: background 0.2s ease;
+            font: inherit;
+            cursor: pointer;
         }
 
         .btn.primary {
@@ -158,10 +160,10 @@
     </header>
 
     <main class="glass-panel">
-        <h1>Restaurant Website with Dynamic Island + Liquid Glass UI</h1>
+        <h1>Experience Fine Dining at Aurora Bistro</h1>
         <p class="tagline">Modern dining, immersive atmosphere, and handcrafted menu favorites.</p>
 
-        <section class="menu-grid" aria-label="Featured menu">
+        <section class="menu-grid" id="menu" aria-label="Featured menu">
             <article class="item">
                 <h2>Truffle Pasta</h2>
                 <p>Fresh handmade tagliatelle with parmesan cream and black truffle.</p>
@@ -177,10 +179,11 @@
         </section>
 
         <div class="cta-row">
-            <a class="btn primary" href="#">Book a Table</a>
-            <a class="btn" href="#">View Full Menu</a>
+            <a class="btn primary" href="#reservations">Book a Table</a>
+            <a class="btn" href="#menu">View Full Menu</a>
         </div>
 
+        <p id="reservations" class="tagline">Reserve now by phone: +1 (212) 555-0136</p>
         <p class="hours">Downtown • Live music every Friday evening</p>
     </main>
 </body>
